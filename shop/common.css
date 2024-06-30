@@ -1,0 +1,20 @@
+/*COLOR VARIABLES START*/
+:root {
+  --main-text-color: #000;
+  --text-color-white: #fff;
+  --dark-decoration-color: #2d2d2d;
+  --Brand-color: #f9a351;
+  --texts-decoration-color-dark: #010101;
+  --texts-decoration-color-white: #090b08;
+}
+/*COLOR VARIABLES END*/
+
+/*COMMONT STYLES START*/
+h1 {
+  color: #000;
+  font-family: 'Noto Sans';
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+/*COMMONT STYLES END*/
