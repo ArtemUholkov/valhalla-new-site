@@ -1,0 +1,55 @@
+.title-ss {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+}
+.title-ss_title {
+  margin-bottom: 32px;
+}
+.title-ss_links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rout_first {
+  color: var(--main-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.rout_first:hover {
+  color: #8b8e99;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.separator_icon-arrow {
+  width: 20px;
+  height: 20px;
+}
+.rout_active {
+  color: #8b8e99;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (max-width: 1440px) {
+  .title-ss {
+    max-width: 1240px;
+  }
+}
+@media (max-width: 1250px) {
+  .title-ss {
+    padding-bottom: 42px;
+  }
+}
+@media (max-width: 600px) {
+  .title-ss_title {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
