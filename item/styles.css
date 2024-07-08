@@ -1,0 +1,113 @@
+body {
+  background: var(--BG, #f6f6f6);
+}
+.title-ss {
+  max-width: 1310px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+}
+.title-ss_title {
+  margin-bottom: 32px;
+}
+.title-ss_links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rout_first {
+  color: var(--main-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.rout_first:hover {
+  color: #8b8e99;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.separator_icon-arrow {
+  width: 20px;
+  height: 20px;
+}
+.rout_active {
+  color: #8b8e99;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.product {
+  padding-left: 320px;
+  padding-right: 320px;
+}
+.product_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 120px;
+}
+.product_images_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.product_main-image_wrapper {
+  width: 610px;
+  height: 470px;
+  border-radius: 20px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #fff;
+
+  /* Big card shadow */
+  box-shadow: 2px 4px 18px 7px rgba(0, 0, 0, 0.1);
+}
+.product_main-image {
+  width: 283px;
+  height: auto;
+}
+.product_images_wrap-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.product_subimage-wrap {
+  width: 190px;
+  min-height: 190px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 2px 4px 10px 2px rgba(0, 0, 0, 0.1);
+}
+.product_item_item-subimage {
+  height: 190px;
+  object-fit: fill;
+}
+.product_item_info-wrapper {
+}
+.product_item_info_title {
+}
+.product_item_info_prices {
+}
+.product_item_info_lowest {
+}
+.product_item_info_highest {
+}
+.product_item_info-sub {
+}
+.product_item_info_info {
+}
+.product_item_info_prescription {
+}

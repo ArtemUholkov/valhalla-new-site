@@ -390,8 +390,9 @@ body {
   transition: all 0.5s;
 }
 .menu_is_opened .wrap_cat_p_s {
-  right: 220px;
+  right: 250px;
   transition: all 0.5s;
+  gap: 130px;
 }
 .menu_is_opened .categories_selection_categories_item {
   width: 60px;
