@@ -96,18 +96,225 @@ body {
   object-fit: fill;
 }
 .product_item_info-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 .product_item_info_title {
+  font-family: 'Noto Sans';
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 45.6px */
+  text-transform: capitalize;
+  color: var(--main-text-color);
+  margin-bottom: 32px;
 }
 .product_item_info_prices {
+  color: var(--Gray-Numbers, #434343);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 6px;
 }
-.product_item_info_lowest {
-}
-.product_item_info_highest {
-}
+
 .product_item_info-sub {
+  color: var(--main-text-color);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom: 32px;
 }
 .product_item_info_info {
+  color: var(--texts-decoration-color-dark);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 12px;
+  max-width: 439px;
 }
 .product_item_info_prescription {
+  color: #010101;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 52px;
+  max-width: 439px;
+}
+.product_item_urgent-window {
+  border-radius: 15px;
+  border: 1px solid var(--Brand-Color, #f9a351);
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+  padding: 18px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+.product_item_urgent-text {
+  color: #000;
+  text-align: center;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product_item_urgent_bold {
+  font-weight: 700;
+}
+.product_item_form-title {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+.product_item_radio_wrapper {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.radio {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radio input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+}
+.radio input[type='radio'] + .radio-label:before {
+  content: '';
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #667085;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -0.1em;
+  margin-right: 1em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250ms ease;
+}
+.radio input[type='radio']:checked + .radio-label:before {
+  background-color: #f9a351;
+  box-shadow: inset 0 0 0 6px #f4f4f4;
+}
+.radio input[type='radio']:focus + .radio-label:before {
+  outline: none;
+  border-color: #f9a351;
+}
+.radio input[type='radio']:disabled + .radio-label:before {
+  box-shadow: inset 0 0 0 4px #f4f4f4;
+  border-color: #b4b4b4;
+  background: #b4b4b4;
+}
+.radio input[type='radio'] + .radio-label:empty:before {
+  margin-right: 0;
+}
+.radio-label {
+  color: var(--texts-decoration-color-dark);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.product_item_form_select {
+  margin-bottom: 32px;
+}
+.radio-toolbar {
+  margin-bottom: 32px;
+}
+
+.radio-toolbar input[type='radio'] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-toolbar label {
+  display: inline-block;
+
+  width: 130px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid var(--Gray-Numbers, #434343);
+  background: var(--White, #fff);
+}
+
+.radio-toolbar label:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+.radio-toolbar input[type='radio']:focus + label {
+  border: 2px solid #444;
+}
+
+.radio-toolbar input[type='radio']:checked + label {
+  background-color: #e4e7e9;
+  border-color: #434343;
+}
+.radio-toolbar_label_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.radio-toolbar_label_title {
+  color: var(--texts-decoration-color-dark);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.radio-toolbar_label_description {
+  color: var(--New-Brand-Color, #f9a351);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.m-42 {
+  margin-bottom: 42px;
+}
+.product_item_total_price {
+  color: var(--New-Brand-Color, #f9a351);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 45.6px */
+  text-transform: capitalize;
+  margin-bottom: 18px;
 }
