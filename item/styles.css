@@ -318,3 +318,23 @@ body {
   text-transform: capitalize;
   margin-bottom: 18px;
 }
+.product_item_count {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.product_item_count_current {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 10px;
+}
+.product_item_count_plus-minus {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
