@@ -408,3 +408,6 @@ body {
   border-top: 1px solid var(--Brand-Color, #f9a351);
   border-bottom: 1px solid var(--Brand-Color, #f9a351);
 }
+
+@media (max-width: 1919px) {
+}
