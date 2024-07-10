@@ -280,7 +280,7 @@ body {
 }
 
 .radio-toolbar input[type='radio']:focus + label {
-  border: 2px solid #444;
+  border: 1px solid #444;
 }
 
 .radio-toolbar input[type='radio']:checked + label {
@@ -382,4 +382,32 @@ body {
   line-height: 25px; /* 138.889% */
   letter-spacing: -0.36px;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.product_item_button_add:hover {
+  background: #f9a351;
+  transition: all 0.3s;
+}
+.product_item_button_add:active {
+  color: #010101;
+}
+.product_item-form {
+  margin-bottom: 80px;
+}
+.product_item_categories {
+  color: #000;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  letter-spacing: -0.36px;
+}
+.product_item_categories_item {
+  color: #010101;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21.6px;
 }
